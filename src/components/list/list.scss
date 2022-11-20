@@ -1,0 +1,74 @@
+@import "../../global.scss";
+
+.main {
+    flex: 12;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    overflow: hidden;
+
+    .form {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        justify-content: center;
+        // align-items: center;
+        margin-top: 20px;
+        background-color: $dark;
+        border-radius: 15px;
+        padding: 10px;
+        color: $light-gray;
+        margin-bottom: 20px;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+
+            input {
+                width: 400px;
+                padding: 5px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+
+            }
+
+            textarea {
+                border-radius: 5px;
+                height: 70px;
+            }
+
+            button {
+                width: 100px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $dark-pink;
+                padding: 5px;
+                border-radius: 5px;
+                color: $dark;
+                cursor: pointer;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+
+
+
+    }
+
+    .list {
+        flex: 9;
+
+
+    }
+
+}

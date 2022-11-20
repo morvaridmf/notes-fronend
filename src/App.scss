@@ -1,0 +1,16 @@
+@import "./global.scss";
+
+.app {
+    box-sizing: border-box;
+    overflow: hidden;
+
+    h1 {
+        color: $dark-pink;
+        margin-top: 20px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

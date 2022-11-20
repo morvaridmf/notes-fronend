@@ -1,0 +1,126 @@
+@import "../../global.scss";
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+
+    .modal {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+        // align-items: center;
+        margin-top: 20px;
+        background-color: white;
+        border: 3px solid $dark-pink;
+        border-radius: 15px;
+        padding: 10px;
+        color: $dark;
+        margin-bottom: 20px;
+
+        .modal-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+
+            input {
+                width: 250px;
+                padding: 5px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+
+            }
+
+            textarea {
+                border-radius: 5px;
+                height: 70px;
+            }
+
+            button {
+                width: 70px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: rgb(0, 134, 0);
+                padding: 5px;
+                border-radius: 5px;
+                color: $light-gray;
+                cursor: pointer;
+                border: none;
+
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+    .item {
+        width: 300px;
+        // height: 160px;
+        background-color: #cccfe5;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin: 10px 10px 10px 10px;
+        cursor: pointer;
+
+        h3 {
+            color: $darkest-pink;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $dark;
+        }
+
+        .item-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+
+            button {
+                background-color: $dark;
+                color: $light-gray;
+                width: 60px;
+                border-radius: 5px;
+                // margin-left: 220px;
+                position: relative;
+                margin-right: 10px;
+                cursor: pointer;
+                margin-bottom: 10px;
+                font-size: 12px;
+
+
+
+
+            }
+
+            .btn-edit {
+                display: inline;
+            }
+
+            .btn-delete {
+                background-color: rgb(189, 52, 52);
+                border: none;
+            }
+        }
+
+
+
+    }
+
+    .item:hover {
+        scale: 1.01;
+    }
+
+}
