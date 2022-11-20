@@ -10,20 +10,6 @@ function List() {
 
 
 
-    // const submitHandle = (e) => {
-    //     e.preventDefault();
-    //     let newNote = { title, description, id: new Date().getTime().toString() }
-
-    //     setNotes([...notes, newNote])
-    //     setDescription("")
-    //     setTitle("")
-
-
-    // }
-    // ======================================================
-
-
-
 
     useEffect(() => {
 
@@ -31,7 +17,7 @@ function List() {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         }
-        fetch("http://localhost:3001/notes", requestOptions)
+        fetch("https://mern-notes-api.onrender.com/notes", requestOptions)
             .then(res => res.json())
             .then(data => setNotes(data))
     }, [])
@@ -49,7 +35,7 @@ function List() {
             body: JSON.stringify(newNote)
         }
 
-        fetch("http://localhost:3001/notes", requestOptions)
+        fetch("https://mern-notes-api.onrender.com/notes", requestOptions)
             .then(res => res.json())
             .then(data => console.log("1", data))
             .catch(error => console.log(error.messsage))
