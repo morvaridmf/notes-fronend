@@ -14,7 +14,7 @@ function Item({ notes, setNotes }) {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
         }
-        fetch(`http://localhost:3001/notes/${id}`, requestOptions)
+        fetch(`https://mern-notes-api.onrender.com/notes/${id}`, requestOptions)
             .then(res => res.json())
         const deleted = notes.filter(d => d._id !== id)
         setNotes(deleted)
@@ -32,7 +32,7 @@ function Item({ notes, setNotes }) {
             })
 
         }
-        fetch(`http://localhost:3001/notes/${id}`, requestOptions)
+        fetch(`https://mern-notes-api.onrender.com/notes/${id}`, requestOptions)
             .then(res => res.json())
         const updated = notes.find(d => {
             if (d._id !== id) {
